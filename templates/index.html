@@ -1,18 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<body onload="checkCookies()">
+<body onload="checkCookies()", onload="loadimages()">
     <div class="flex-container-h">
     <div>
     <h1>my final project with interactive features </h1>
     <div class="flex-container-h">
-        <button>oneclick =<img src="{{url_for ('static',filename = 'catalogue album cover.jpg')}} ">
-            <img src ="{{url_for('static',filename = 'dark side of the moon.jpg')}}">
-            <img src="{{url_for('static', filename = 'animals pink floyd album cover.jpg')}}">the wall album cover.jpg" alt="the wall album cover by pink floyd">()"<img src="the division bell cover.jpg" alt="the division bell cover by pink floyd</button>
-    </div>
+    <link rel="static" href="{{url_for('static',filename = 'animals pink floyd album cover.jpg')}}">
+    <link rel="static" href="{{url_for('static',filename = 'wish you were here album cover.jpg')}}">
+    <link rel="static" href="{{url_for('static',filename = 'catalogue album cover.jpg')}}">
+    <link rel="static" href="{{url_for('static',filename = 'the division bell cover.jpg')}}">
+    <link rel="static" href="{{url_for('static',filename = 'sleeve image for wish you were here.jpg')}}">
+    <link rel="static" href="{{url_for('static',filename = 'dave gilmour in the 70s at front.jpg')}}">
+    
+    <button>oneclick =<img src="the wall album cover.jpg"onload="loadimage()"width="100"height="132"> 
 
     <h1> welcome to my website </h1>
-    <p id="intro-text">I have chosen my topic to be about the great pink floyd. The unique band.</p>
+    <p id="intro-text">I have chosen my topic to be about the great pink floyd.
+    The unique band.</p>
 
     <br>
 
@@ -21,7 +26,9 @@
     <p class="main-text">This is an event that occurs as a result of the user 'clicking' a specific element.</p>
     <p onclick="showsimage(this)" class="showsimage">the button should now show a image of album covers</p>
     <div class="flex-container-h2">
-    <button onclick="showsimage(this)" class="showsimage">pink floyd image</button>
+    <button onclick="showsimage(this)" class="showsimage"></button>
+    <img src="{{url_for ('static',filename = 'image pink floyd 1970s.jpg')}} ">
+    <img src="{{url_for ('static',filename = 'what the band looks like now.jpg')}} ">
     <p class="pink floyd images " id="showsimage"></p>
     
     </div>
