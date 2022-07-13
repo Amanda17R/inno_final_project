@@ -13,64 +13,61 @@
     <link rel="static" href="{{url_for('static',filename = 'sleeve image for wish you were here.jpg')}}">
     <link rel="static" href="{{url_for('static',filename = 'dave gilmour in the 70s at front.jpg')}}">
     
-    <button>oneclick =<img src="the wall album cover.jpg"onload="loadimage()"width="100"height="132"> 
+    <img src="{{url_for ('static',filename = 'the wall album cover.jpg')}} "> 
 
     <h1> welcome to my website </h1>
-    <p id="intro-text">I have chosen my topic to be about the great pink floyd.
-    The unique band.</p>
-
-    <br>
-
-    <div class="main-box">
-    <h3 class="main-title">onclick Events</h3>
-    <p class="main-text">This is an event that occurs as a result of the user 'clicking' a specific element.</p>
-    <p onclick="showsimage(this)" class="showsimage">the button should now show a image of album covers</p>
-    <div class="flex-container-h2">
-    <button onclick="showsimage(this)" class="showsimage"></button>
-    <img src="{{url_for ('static',filename = 'image pink floyd 1970s.jpg')}} ">
-    <img src="{{url_for ('static',filename = 'what the band looks like now.jpg')}} ">
-    <p class="pink floyd images " id="showsimage"></p>
     
-    </div>
-    </div>
 
-    <br>
     <br>
 
     <div class="main-box">
-    <h3 class="main-title">onload Events</h3>
-    <p class="main-text">This is an event that occurs as soon as the user has loaded the web page.</p>
-    <p class="example-text" id="cookie"></p>
+    
+    <div class="flex-container-h2">
+    
+    <img src="{{url_for ('static',filename = 'image pink floyd 1970s.jpg')}} ">
+    <p id="intro-text"> "I have chosen my topic to be about the great pink floyd.
+        The unique band". They bagan their journey which started in london in the year of 1965
+    they had a new sound then which was described as psychedelic.</p>
+
+    <img src="{{url_for ('static',filename = 'what the band looks like now.jpg')}} ">
+    <p>In the first picture you will notice 5 memebers, but as they grew sadly now there are only 4 members of Pink Floyd </p>
+    <p class="pink floyd images " id="showsimage"></p>
+
+    
+</div>
+</div>
+
+<br>
+<br>
+
+<div class="main-box">
+
+<p class="example-text" id="cookie"></p>
+</div>
+
+<br>
+<br>
+
+<div class="main-box">
+
+<div class="flex-container-h3">
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="the wall album cover.jpg">
     </div>
-
-    <br>
-    <br>
-
-    <div class="main-box">
-    <h3 class="main-title">Mouse Events</h3>
-    <p class="main-text">This is an event that occurs when the user moves their cursor over a specific element.</p>
-    <div class="flex-container-h3">
-        <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="the wall album cover.jpg">
-        </div>
-        <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="the division bell cover.jpg">
-        </div>
-        <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="what the band looks like now.jpg">
-        </div>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="the division bell cover.jpg">
     </div>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="what the band looks like now.jpg">
     </div>
+</div>
+</div>
 
-    <br>
-    <br>
+<br>
+<br>
 
-    <div class="main-box">
-    <h3 class="main-title">Extra:</h3>
-        <p class="main-text">Additional features that can be used in developing a website with JavaScript.</p>
-        <h4 class="main-text">Alert</h4>
+<div class="main-box">
 
-        <p class="main-text">An alert is used to notify the user via a pop-up window.</p>
-        <button onclick="sendAlert()" class="example_button">Display Host Name</button>
-        <h4 class="main-text">Toggle</h4>
-        <p class="main-text">TBC</p>
+    <p class="main-text"></p>
+    <a></a>
+
     </div>
 
     <br>
