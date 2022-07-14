@@ -1,18 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>This is Why</h1>
-<ul>
-    <li> This is the animals album artwork.
+<center>
+<h1>This is Why</h1><h1 style="text-align-centre;"></h1>
+</center>
+<center>
+<h1>This is the animals album artwork </h1>
+</center> 
+<br>
+<center>
 <img src="{{url_for ('static',filename = 'animals pink floyd album cover.jpg')}} ">
-</li>
-</ul>
+</center>
+
+
 <p>The names Pink and Floyd came from two of Syd Barrett’s favourite Carolina bluesmen, Pink Anderson and Floyd Council, which he merged together and pink floyd the band name was born.
     pink floyd featured here this picture is from the 1960's. Pink floyd are a psychedelic sounding progressive rock band.they had similiar sales of adoration for their next coming album wish you were here roger water were taking over the band and insisted to take the song writing too.,
     They sold 45 millon copies of darkside of the moon featured on page 2.They acheived their first number one album in 1973 which went on to sell the 45 million copies world wide</p>
-    <ul>
-        <li>This is pink floyd in the 1970's
+<center>
+    This is pink floyd in the 1970's
+    </center>
+<center>
 <img src="{{url_for ('static',filename = 'dave gilmour in the 70s at front.jpg')}} ">
-</li>
-</ul> 
+</center>
 {% endblock %}

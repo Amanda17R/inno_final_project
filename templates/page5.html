@@ -1,16 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>This page has the catalogue girls on</h1>
+<center>
+<h1>This page has the catalogue girls on</h1><h1 style="text-align-centre;"></h1>
+</center>
+<center>
 <img src="{{url_for ('static',filename = 'catalogue album cover.jpg')}} ">
-
+</center>
 <p> This is a picture i got from google images it is a painting of the lady that is painted for all
     the album covers this is known as the catalogue picture it is fasioned in many ways from paintings to actual real ladys
     being painted for pictures here i have included below a picture from my own collection of the ladies that are painted as the catalogue of album covers.
 </p>
 <br>
-<h2>Here we have more of my own pictures</h2>
+<center>
+<h2>Here we have more of my own pictures</h2><h2 style="text-align-centre;"></h2>
+</center>
+<center>
 <img src="{{url_for ('static',filename = 'catalogue ladys.jpg')}} "width = "250" height= 200>
+</center>
 <p> As you can see they really do vary from painting to picture i have seen this design also on a cup.</p>
         
 {%endblock %}
