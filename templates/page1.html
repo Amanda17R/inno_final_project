@@ -1,88 +1,44 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!-- <style>
-    body { height: 100% ;
-}
-    body {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-    }
-    .header-menu,
-    footer {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-    .header-menu {
-        justify-content: flex-end;
-        height: 60px;
-        background: #fcfffe;
-        color: #fff;
-    }
-    h2 {
-        margin: 0 0 8px;
-    }
-    ul li {
-        display: inline-block;
-        padding: 0 10px;
-        list-style: none;
-    }
-    aside {
-        flex: 0.4;
-        height: 165px;
-        padding-left: 15px;
-        border-left: 1px solid rgb(59, 59, 59);
-    }
-    section {
-        flex: 1;
-        padding-right: 15px;
-    }
-    footer {
-        padding: 0 10px;
-        background: rgb(251, 154, 154);
-    }
-    </style> -->
-<nav>
-    <center>
-    <h1 style="text-align:center; color:deeppink">Wish You Were Here Page</h1>
-    </center>
+
+<body style="text-align:center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;padding: 20px;">
+    
+    <h1 style=" color:deeppink">Wish You Were Here Page</h1>
+    
     <br>
-    <center>
+    
     <br>
-        <center>
+        
             This is the album cover for wish you were here.
-        <center>
+        
             <br>
             <img src="{{url_for ('static',filename = 'wish you were here album cover.jpg')}} ">
-</center>
+
 <br>
-</center>
-<h1 style="text-align:centre;color:darksalmon">"wish you were here" was made in 1975</h1>
-</center>
+
+<h1 style="color:darksalmon">"Wish You Were Here" was made in 1975</h1>
+
 <br>
-<center>
-        <p>A rambling conversation snippets between Nick Sedgewick and MR Roger Waters.. N.S says 'Heres a good one to start with Roger why was it two years before Pink Floyd made a album after Dark side of the moon?'
+
+        <p>A rambling conversation snippets between Nick Sedgewick and Mr Roger Waters.. N.S says 'Heres a good one to start with Roger why was it two years before Pink Floyd made a album after Dark side of the moon?'
             R.W replies 'That is a very good question i'm very glad you asked me that one...er. Without looking at diaries it is difficult.
-            im trying to remember whatever went on..I'm not being funny , I honestley can't remember why it was 1973 when Dark Side of the Moon came out wasn't it?. January 1973and we're in Oct.'75'so in the January we bagan recording 'Wish You Were Here'..Nick says ' I remeber I went to the 'E.M.I'studios in the winter of '74' and the band were recording stuff
-            with bottles and rubber bands.. the period im talking about is the one before your french tour in June '74' R.W.. 'Ah! right yeah 'Well Nick, there was an abortive attempt to make a album not using any musical instruments it seemed
+            i'm trying to remember whatever went on..I'm not being funny , I honestley can't remember why it was 1973 when Dark Side of the Moon came out wasn't it?. January 1973 and we're in Oct.'75'so in the January we began recording 'Wish You Were Here'..Nick says ' I remeber I went to the 'E.M.I'studios in the winter of '74' and the band were recording stuff
+            with bottles and rubber bands.. the period i'm talking about is the one before your french tour in June '74' R.W.. 'Ah! right yeah 'Well Nick, there was an abortive attempt to make a album not using any musical instruments it seemed
             like a good idea at the time, But it didn't really come together probably because we needed to stop for a bit. 
             N.S says ' why go on to get off the road? and have some breathing space?'
-            R.W then replies' Yeah, But i don't think it was a conscious as that really. I think it was that when Dark Side of the Moon was so successful, it was the end. End of the road if you like we had reached the point we had been trying to achieve since we were all teenagers 
-            and we felt there was nothing more we could do in rock and roll.
+            R.W then replies' Yeah, But I don't think it was a conscious as that really. I think it was that when Dark Side of the Moon was so successful, it was the end. End of the road if you like we had reached the point we had been trying to achieve since we were all teenagers. 
+            nd we felt there was nothing more we could do in rock and roll.
         </p> 
-        </center>
+    
         <br>
-    <center>
-    <a>inside sleeve for the wish you were here</a>
-</center>
-<br>
-<center>
-        <img src="{{url_for ('static',filename = 'sleeve image for wish you were here.jpg')}} ">
-</center>
-</nav>
+    
+    <a>Inside sleeve for the Wish You Were Here album</a>
 
+<br>
+        <img src="{{url_for ('static',filename = 'sleeve image for wish you were here.jpg')}} ">
+
+</body>
 
 
 
