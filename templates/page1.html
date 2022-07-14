@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<style>html;
+<!-- <style>
     body { height: 100% ;
 }
     body {
@@ -43,21 +43,26 @@
         padding: 0 10px;
         background: rgb(251, 154, 154);
     }
-    </style>
+    </style> -->
 <nav>
     <center>
-    <h1>Wish You Were Here Page</h1><h1 style="text-align-centre;"></h1>
+    <h1 style="text-align:center; color:deeppink">Wish You Were Here Page</h1>
     </center>
     <br>
     <center>
-    <h1>"wish you were here" was made in 1975</h1><h1 style="text-align-centre;"></h1>
-        </center>
+    <br>
         <center>
             This is the album cover for wish you were here.
-            </center>
         <center>
+            <br>
             <img src="{{url_for ('static',filename = 'wish you were here album cover.jpg')}} ">
 </center>
+<br>
+</center>
+<h1 style="text-align:centre;color:darksalmon">"wish you were here" was made in 1975</h1>
+</center>
+<br>
+<center>
         <p>A rambling conversation snippets between Nick Sedgewick and MR Roger Waters.. N.S says 'Heres a good one to start with Roger why was it two years before Pink Floyd made a album after Dark side of the moon?'
             R.W replies 'That is a very good question i'm very glad you asked me that one...er. Without looking at diaries it is difficult.
             im trying to remember whatever went on..I'm not being funny , I honestley can't remember why it was 1973 when Dark Side of the Moon came out wasn't it?. January 1973and we're in Oct.'75'so in the January we bagan recording 'Wish You Were Here'..Nick says ' I remeber I went to the 'E.M.I'studios in the winter of '74' and the band were recording stuff
@@ -67,12 +72,15 @@
             R.W then replies' Yeah, But i don't think it was a conscious as that really. I think it was that when Dark Side of the Moon was so successful, it was the end. End of the road if you like we had reached the point we had been trying to achieve since we were all teenagers 
             and we felt there was nothing more we could do in rock and roll.
         </p> 
-    
-<ul>
-    <li>inside sleeve for the wish you were here album
+        </center>
+        <br>
+    <center>
+    <a>inside sleeve for the wish you were here</a>
+</center>
+<br>
+<center>
         <img src="{{url_for ('static',filename = 'sleeve image for wish you were here.jpg')}} ">
-    </li>
-</ul>
+</center>
 </nav>
 
 

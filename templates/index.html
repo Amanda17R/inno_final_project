@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<body onload="checkCookies()", onload="loadimages()">
+<body> 
     <div class="flex-container-h">
     <div>
+        <br>
         <center>
-    <h1>My Pink Floyd Website</h1><h1 style="text-align-centre;"></h1>
+    <h1 style="text-align-center; color:forestgreen">My Pink Floyd Website </h1>
 </center>
+<br>
     <div class="flex-container-h">
     <link rel="static" href="{{url_for('static',filename = 'animals pink floyd album cover.jpg')}}">
     <link rel="static" href="{{url_for('static',filename = 'wish you were here album cover.jpg')}}">
@@ -17,8 +19,9 @@
 <center>
 <img src="{{url_for ('static',filename = 'the wall album cover.jpg')}} "> 
 </center>
+<br>
     <center>
-    <h1> Welcome i have put together some knowledge with pictures </h1><h1 style="text-align-centre;"></h1>
+    <h1 style="text-align-center;color:lawngreen" > Welcome i have put together some knowledge with pictures </h1>
 </center>
 
     <br>
@@ -29,12 +32,20 @@
     <center>/
     <img src="{{url_for ('static',filename = 'image pink floyd 1970s.jpg')}} ">
     </center>
+    <br>
+    <center>
     <p id="intro-text"> "I have chosen my topic to be about the great pink floyd.
         The unique band". They bagan their journey which started in london in the year of 1965
     they had a new sound then which was described as psychedelic.</p>
-
+    </center>
+<center>
     <img src="{{url_for ('static',filename = 'what the band looks like now.jpg')}} ">
-    <p>In the first picture you will notice 5 memebers, but as they grew sadly now there are only 4 members of Pink Floyd </p>
+</center>
+<br>
+<center>
+    <p>In the first picture you will notice 5 memebers, but as they grew sadly now there are only 4 members of Pink Floyd as Syd Barrett passed away in 2006 at the age of 60</p>
+    </center>
+
     <p class="pink floyd images " id="showsimage"></p>
 
     

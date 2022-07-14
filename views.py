@@ -30,8 +30,8 @@ def page4():
 def page5():
     return render_template("page5.html")
     
-@my_view.route('/javascript')
-@my_view.route('/js')
+@my_view.route('/pinkfloyd')
+@my_view.route('/History')
 @my_view.route('/home')
 def index_redirect():
     return redirect(url_for("my_view.index"))
