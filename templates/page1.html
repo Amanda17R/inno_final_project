@@ -2,9 +2,12 @@
 
 {% block content %}
 
-<body style="text-align:center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;padding: 20px;">
-    
-    <h1 style=" color:deeppink">Wish You Were Here Page</h1>
+<body> 
+    <div class="main-box">
+        <br>
+        <button onclick="darkMode()">Darkmode</button>
+        <br>
+    <h1 class= "wish-header">Wish You Were Here Page</h1>
     
     <br>
     
@@ -17,7 +20,7 @@
 
 <br>
 
-<h1 style="color:darksalmon">"Wish You Were Here" was made in 1975</h1>
+<h1 class="wishyou-header">"Wish You Were Here" was made in 1975</h1>
 
 <br>
 
@@ -37,7 +40,7 @@
 
 <br>
         <img src="{{url_for ('static',filename = 'sleeve image for wish you were here.jpg')}} ">
-
+</div>
 </body>
 
 

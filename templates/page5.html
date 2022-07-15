@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<body style="text-align:center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; padding: 20px;">
-
-<h1 style=" color: rgb(10, 9, 8)" >This page has the catalogue girls on</h1><h1 ></h1>
+<body>
+    <div class="main-box">
+        <br>
+        <button onclick="darkMode()">Darkmode</button>
+        <br>
+<h1 class="cat-header" >This page has the catalogue girls on</h1><h1 ></h1>
 
 
 <img src="{{url_for ('static',filename = 'catalogue album cover.jpg')}} ">
@@ -17,7 +20,7 @@
 
 <br>
 
-<h2 style="color:indigo">Here we have more of my own pictures.</h2>
+<h2 class="pic-header">Here we have more of my own pictures.</h2>
 
 <br>
 
@@ -26,5 +29,6 @@
 <br>
 
 <p> As you can see they really do vary, From painting to picture I have seen this design also on a cup.</p>
-
+</div>
+</body>
 {%endblock %}

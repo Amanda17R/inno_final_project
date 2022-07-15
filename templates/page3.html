@@ -2,8 +2,12 @@
 
 {% block content %}
 
-<body style="text-align:center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;padding: 20px; ">
-<h1 style=" color: darkblue">This is the animals album artwork </h1>
+<body>
+    <div class="main-box">
+        <br>
+        <button onclick="darkMode()">Darkmode</button>
+        <br>
+<h1 class="animals-header">This is the animals album artwork </h1>
 
 <br>
 
@@ -11,7 +15,7 @@
 
 <br>
 
-    <h1 style="text-align:center; color:darkgreen">This is Why</h1>
+    <h1 class="why-header">This is Why</h1>
     
 
 <p>The names Pink and Floyd came from two of Syd Barrett’s favourite Carolina bluesmen, Pink Anderson and Floyd Council, which he merged together and pink floyd the band name was born.
@@ -25,6 +29,6 @@
     <br>
 
 <img src="{{url_for ('static',filename = 'dave gilmour in the 70s at front.jpg')}} ">
-
+</div>
 </body>
 {% endblock %}

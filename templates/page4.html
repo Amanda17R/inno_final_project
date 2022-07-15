@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<body style="text-align:center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;padding: 20px;">
-<h1 style=" color:orange"> This page has a bit more conversation on the band</h1>
+<body>
+    <div class="main-box">
+        <br>
+        <button onclick="darkMode()">Darkmode</button>
+        <br>
+<h1 class="info-header"> This page has a bit more conversation on the band</h1>
 
 <br>
 
@@ -19,7 +23,7 @@ Once you've got five words or a series of words that
 </body>
 <br>
 
-<h2 style=" color: blueviolet;">These are pictures from my book </h2>
+<h2 class=" book-header">These are pictures from my book </h2>
 </body>
 <br>
 
@@ -36,5 +40,6 @@ Once you've got five words or a series of words that
 <br>
 
 <p> The conversation and these pictures above are some of the ones i got out of my  tablature book enjoy!</p>
+</div>
 </body>
 {% endblock %}
